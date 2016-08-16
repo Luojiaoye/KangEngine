@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F59ED570-E8EF-316B-7FAF-04B245EFC7F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>KangEngine</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>4.6.0f3</UnityVersion>
+    <RootNamespace>KangEngine</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Program Files\unity4.6\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="src\anim\AnimationManager.cs" />
+    <Compile Include="src\anim\base\AnimationObject.cs" />
+    <Compile Include="src\anim\interface\IAnimationObject.cs" />
+    <Compile Include="src\camera\base\KangCamera.cs" />
+    <Compile Include="src\camera\base\CamaerData.cs" />
+    <Compile Include="src\camera\KangCameraManager.cs" />
+    <Compile Include="src\core\KangComponent.cs" />
+    <Compile Include="src\core\KangEngineRoot.cs" />
+    <Compile Include="src\core\KangSingleTon.cs" />
+    <Compile Include="src\event\EventManager.cs" />
+    <Compile Include="src\gameUnit\base\GameUnitBase.cs" />
+    <Compile Include="src\gameUnit\base\LifeMoveableGameUnit.cs" />
+    <Compile Include="src\gameUnit\base\MoveableGameUnit.cs" />
+    <Compile Include="src\gameUnit\base\StaticGameUnit.cs" />
+    <Compile Include="src\gameUnit\GameUnitManager.cs" />
+    <Compile Include="src\gameUnit\interface\IGameUnit.cs" />
+    <Compile Include="src\gameUnit\interface\ILifeGameUnit.cs" />
+    <Compile Include="src\gameUnit\interface\IMoveableGameUnit.cs" />
+    <Compile Include="src\input\KangInput.cs" />
+    <Compile Include="src\physics2\base\CastUnit.cs" />
+    <Compile Include="src\physics2\base\MoveUnit.cs" />
+    <Compile Include="src\physics2\base\Physics2BaseUnit.cs" />
+    <Compile Include="src\physics2\interface\IPhysics2.cs" />
+    <Compile Include="src\physics2\base\SpinUnit.cs" />
+    <Compile Include="src\physics2\Physics2ObjectManager.cs" />
+    <Compile Include="src\render\base\AnimRenderObject.cs" />
+    <Compile Include="src\render\base\RenderObject.cs" />
+    <Compile Include="src\render\base\StaticRenderObject.cs" />
+    <Compile Include="src\render\base\TransformObject.cs" />
+    <Compile Include="src\render\RenderManager.cs" />
+    <Compile Include="src\res\base\ResConfig.cs" />
+    <Compile Include="src\res\ResManager.cs" />
+    <Compile Include="src\shake\base\ShakeData.cs" />
+    <Compile Include="src\shake\base\ShakeObject.cs" />
+    <Compile Include="src\shake\ShakeManager.cs" />
+    <Compile Include="src\timer\base\TimerUnit.cs" />
+    <Compile Include="src\timer\base\TimerUnitBase.cs" />
+    <Compile Include="src\timer\TimerManager.cs" />
+    <Compile Include="src\timer\TimerWheel.cs" />
+    <Compile Include="src\tween\KangTween.cs" />
+    <Compile Include="src\util\KangUtil.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)$(TargetName).dll E:\TornadoGame\code\libs\Debug
+copy $(TargetDir)$(TargetName).pdb E:\TornadoGame\code\libs\Debug
+copy $(TargetDir)$(TargetName).dll E:\TornadoGame\unityProject\Assets\Kang\Engine
+copy $(TargetDir)$(TargetName).pdb E:\unityProject\Demo1\Assets\Kang\Engine</PostBuildEvent>
+  </PropertyGroup>
+</Project>
