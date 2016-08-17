@@ -48,6 +48,9 @@
     <Reference Include="UnityEngine">
       <HintPath>D:\Program Files\unity4.6\Editor\Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Program Files\unity4.6\Editor\Data\UnityExtensions\Unity\GUISystem\4.6.0\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -69,6 +72,12 @@
     <Compile Include="src\gameUnit\interface\IGameUnit.cs" />
     <Compile Include="src\gameUnit\interface\ILifeGameUnit.cs" />
     <Compile Include="src\gameUnit\interface\IMoveableGameUnit.cs" />
+    <Compile Include="src\input\base\InputBase.cs" />
+    <Compile Include="src\input\base\InputEvent.cs" />
+    <Compile Include="src\input\base\JoystickBase.cs" />
+    <Compile Include="src\input\base\UGUIJoystick.cs" />
+    <Compile Include="src\input\data\UGUIData.cs" />
+    <Compile Include="src\input\InputManager.cs" />
     <Compile Include="src\input\KangInput.cs" />
     <Compile Include="src\physics2\base\CastUnit.cs" />
     <Compile Include="src\physics2\base\MoveUnit.cs" />

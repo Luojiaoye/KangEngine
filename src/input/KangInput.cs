@@ -61,4 +61,12 @@ namespace KangEngine.Input
         MT_MouseX,
         MT_MouseY,
     }
+
+    public enum AxisType
+    {
+        AT_Unknow,
+        AT_Horizontal,
+        AT_Vertical,
+        AT_Default = AT_Horizontal,
+    }
 }

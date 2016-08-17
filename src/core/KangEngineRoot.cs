@@ -5,6 +5,7 @@ using KangEngine.Camera;
 using KangEngine.Shake;
 using KangEngine.Physics2;
 using KangEngine.Timer;
+using KangEngine.Input;
 
 namespace KangEngine.Core
 {
@@ -46,6 +47,7 @@ namespace KangEngine.Core
             KangSingleTon<KangCameraManager>.Inst().Update();
             ShakeManager.Inst().Update();
             TimerManager.Inst().Update();
+            InputManager.Inst().Update();
 
             if (this._updateMethod != null)
                 this._updateMethod.Invoke(_gameEntry, null);

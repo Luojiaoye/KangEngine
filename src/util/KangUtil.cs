@@ -81,13 +81,13 @@ namespace KangEngine.Util
             return left;
         }
 
-        public static Vector3 ProjectAxisVector(Vector3 origin, float deg, AxisType type)
+        public static Vector3 ProjectAxisVector(Vector3 origin, float deg, ProjectAxisType type)
         {
             Vector3 result = Vector3.zero;
             float length = origin.magnitude;
             switch (type)
             {
-                case AxisType.AT_X:
+                case ProjectAxisType.PAT_X:
                     //result.Set(0,length*);
                     break;
             }
@@ -96,10 +96,10 @@ namespace KangEngine.Util
         }
     }
 
-    public enum AxisType
+    public enum ProjectAxisType
     {
-        AT_X,
-        AT_Y,
-        AT_Z,
+        PAT_X,
+        PAT_Y,
+        PAT_Z,
     }
 }
